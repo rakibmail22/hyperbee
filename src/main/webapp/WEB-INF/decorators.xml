@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators/">
+
+    <excludes>
+        <pattern>/user/note/save</pattern>
+        <pattern>/notice/add</pattern>
+        <pattern>/notice/update</pattern>
+        <pattern>/notice/delete</pattern>
+        <pattern>/conference/add</pattern>
+        <pattern>/conference/update</pattern>
+        <pattern>/conference/delete</pattern>
+        <pattern>/buzz/buzzList</pattern>
+        <pattern>/reservation/add</pattern>
+        <pattern>/reservation/update</pattern>
+        <pattern>/reservation/delete</pattern>
+        <pattern>/login</pattern>
+        <pattern>/signUp</pattern>
+    </excludes>
+
+    <decorator name="decorator" page="decorator.jsp">
+        <pattern>/*</pattern>
+        <pattern>/user/*</pattern>
+        <pattern>/notice*</pattern>
+        <pattern>/conference*</pattern>
+        <pattern>/profile*</pattern>
+        <pattern>/reservation*</pattern>
+        <pattern>/denied*</pattern>
+    </decorator>
+
+</decorators>
